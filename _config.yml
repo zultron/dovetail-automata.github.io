@@ -4,3 +4,4 @@ relative_permalinks: true
 permalink: /blog/:year/:month/:day/:title/
 markdown: kramdown
 repository: https://github.com/machinekit/machinekit
+google_analytics_id: 'put_your_google_analytics_id_here'
