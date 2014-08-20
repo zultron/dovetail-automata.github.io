@@ -1,12 +1,14 @@
 {% include head.html %}
 
 <body class="wrap">
-  {% include header.html %}
+  <nav class="main-nav">
+    {% include primary-nav-items.html %}
+  </nav>
 
   <div id="content">
-  {{ content }}
+      {{ content }}
   </div>
-  {% include footer.html %}
+
   {% include analytics.html %}
 </body>
 </html>

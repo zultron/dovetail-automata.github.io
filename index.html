@@ -1,42 +1,25 @@
 ---
 layout: default
-title: Machinekit &bull; Move it, build it, make it
+title: Dovetail Automata &bull; Open Source Automation
 overview: true
 ---
 
-<section class="intro">
+<header>
   <div class="grid">
-    <div class="unit whole center-on-mobiles">
-      <p class="first">Control CNC machines and robots with open-source software.</p>
+    <div class="unit one-quarter" id="logo"></div>
+    <div class="unit three-quarters align-center">
+      <h1 id="maintitle">Dovetail Automata</h1>
+      <p id="subtitle">Open Source Automation</p>
     </div>
   </div>
-</section>
- 
-<section class="features">
-  <div class="grid">
-      <div class="unit one-third">
-         <div class="feature">
-            <h2>Flexible</h2>
-            <p>Create systems to control nearly anything. Routers. Lathes. Milling machines. Laser cutters. 3D printers. Even robots and quadcopters!</p>
+</header>
+
+<section class="hero_image">
+    <div class="grid">
+        <div class="unit whole">
+            <img src="/images/front_hero.jpg">
         </div>
     </div>
-    <div class="unit one-third">
-        <div class="feature">
-        <h2>Universal</h2>
-        <p>
-            Machinekit works on many devices. Use Beaglebone Black, Raspberry Pi, ARM devices, or the spare PC in your closet. Run the GUI from the host or a remote tablet.
-        </p>
-    </div>
-    </div>
-    <div class="unit one-third">
-        <div class="feature">
-      <h2>Reliable</h2>
-      <p>
-         Realtime Linux threads with Xenomai, RTAI, or RT_Preempt threads, and non-real time with vanilla Posix threads for simulation and testing.
-      </p>
-  </div>
-    </div>
-    <div class="clear"></div>
-  </div>
 </section>
 
+{% include frontpage_features.html %}
