@@ -125,6 +125,14 @@ nav li {
 @media (max-width: 629px){
   .main-nav li {
       display: block;
+      text-align: center;
+      height: 39px;
+  }
+  #social_buttons {
+      display: none;
+  }
+  #nav_logo {
+      display: none;
   }
   .main-nav .show-on-mobiles {
     display: inline;
