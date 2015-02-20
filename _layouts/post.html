@@ -1,9 +1,18 @@
 ---
-layout: default
+layout: news
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<article>
+  <h2>
+    {{ page.title }}
+    <a href="{{ page.url }}" class="permalink" title="Permalink">∞</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date">
+      {{ page.date | date_to_string }}
+    </span>
+  </div>
 
-<div class="post">
-{{ content }}
-</div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
