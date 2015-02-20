@@ -91,6 +91,7 @@ nav li {
 
 .nav_button a {
   color: #BBBBBB;
+  text-decoration: none;
   font-weight: 900;
   font-size: 18px;
   padding: 0.5em 2em;
