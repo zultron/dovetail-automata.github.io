@@ -44,9 +44,6 @@ body > header {
 
 /* Header */
 #logo {
-   background-image: url("{{site.url}}/images/da_logo_blk.svg");
-   background-repeat: no-repeat;
-   background-size: contain;
    margin-top: 1em;
    height: 10em;
 }
@@ -65,9 +62,6 @@ body > header {
 }
 
 #nav_logo {
-    background-image: url("{{site.url}}/images/da_logo_blk.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
     cursor: pointer;
     width: 133px;
     height: 133px;
