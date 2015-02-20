@@ -44,7 +44,7 @@ body > header {
 
 /* Header */
 #logo {
-   background-image: url("{{site.url}}/images/da_logo.svg");
+   background-image: url("{{site.url}}/images/da_logo_blk.svg");
    background-repeat: no-repeat;
    background-size: contain;
    margin-top: 1em;
