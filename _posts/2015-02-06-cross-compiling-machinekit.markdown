@@ -5,9 +5,6 @@ date:   2015-02-06 16:20:00
 categories: machinekit build
 ---
 
-# Cross-compiling Machinekit
-
-
 # The problem
 
 [Machinekit][mk], the open-source machine controller, is ported not
