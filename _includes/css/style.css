@@ -409,6 +409,11 @@ a:hover {
 
 a.permalink {
   text-decoration: none;
+  color: #999;
+}
+
+a.permalink:hover {
+  color: #99F;
 }
 
 strong {
