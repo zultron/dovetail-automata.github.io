@@ -1,25 +1,30 @@
-<ul>
-  <li id="nav_logo" class="nav_button hide-on-mobiles">
-    <a href="{{site.url}}/" ></a>
-  </li>
-  <li class="{% if page.overview %}current{% endif %} nav_button">
-    <a href="{{site.url}}/">Home</a>
-  </li>
-  <li class="{% if page.about %}current{% endif %} nav_button">
-    <a href="{{site.url}}/about.html">About</a>
-  </li>
-  <li class="{% if page.blog %}current{% endif %} nav_button">
-    <a href="{{site.url}}/blog.html">Blog</a>
-  <li>
-  <li class="social_buttons hide-on-mobiles"> 
-    <a
-       href="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.dovetail-automata.com%2F&width&layout=button&action=like&show_faces=false&share=false&height=35&appId=130291730288"
-       alt="Like this page on Facebook">
-      <img
-	 class="share_button"
-	 src="{{site.url}}/images/facebook-like-256.png"
-	 title="Like this page on Facebook">
-      </a>
- </li>
-</ul>
+<div class="grid">
+  <div class="one-third unit center-on-mobiles">
+    <img height="133px" width="133px"
+	 src="{{site.url}}/images/da_logo_blk.svg"/>
+  </div>
+  <nav class="main-nav unit two-thirds hide-on-mobiles">
+    <ul>
+      <li class="{% if page.overview %}current{% endif %} nav_button">
+	<a href="{{site.url}}/">Home</a>
+      </li>
+      <li class="{% if page.about %}current{% endif %} nav_button">
+	<a href="{{site.url}}/about.html">About</a>
+      </li>
+      <li class="{% if page.blog %}current{% endif %} nav_button">
+	<a href="{{site.url}}/blog.html">Blog</a>
+      <li>
+      <li class="social_buttons hide-on-mobiles"> 
+	<a
+	   href="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.dovetail-automata.com%2F&width&layout=button&action=like&show_faces=false&share=false&height=35&appId=130291730288"
+	   alt="Like this page on Facebook">
+	  <img
+	     class="share_button"
+	     src="{{site.url}}/images/facebook-like-256.png"
+	     title="Like this page on Facebook">
+	</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
