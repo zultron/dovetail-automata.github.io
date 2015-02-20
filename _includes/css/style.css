@@ -405,6 +405,10 @@ a:hover {
   color: #77F;
 }
 
+a.permalink {
+  text-decoration: none;
+}
+
 strong {
   font-weight: 700;
 }
