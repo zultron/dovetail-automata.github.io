@@ -393,14 +393,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #99F;
+  color: #FFF;
   transition: all .25s;
    -moz-transition: all .25s;
    -webkit-transition: all .25s;
 }
 
 a:hover {
-  color: #77F;
+  color: #99F;
 }
 
 a.permalink {
