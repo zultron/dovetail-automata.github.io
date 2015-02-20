@@ -7,11 +7,11 @@ categories: machinekit build
 
 ## The problem
 
-[Machinekit][mk], the open-source machine controller, is ported not
+[Machinekit], the open-source machine controller, is ported not
 only to x86 but also ARM architecture, and members of the community
 distribute packages for Beaglebone and Raspberry Pi boards.
 
-[Dovetail Automata's Buildbot][dt-buildbot] serves as the de-facto CI
+The [Dovetail Automata Buildbot] serves as the de-facto CI
 system for the project, and builds the Debian and Ubuntu packages
 that most of the community use.  The Buildbot builds for and tests on
 several real-time threads systems each on x86_64, i686 and armv7hl
@@ -26,15 +26,15 @@ for x86 builds. Building for ARM with qemu emulation on x86 takes even
 longer, even with 16 cores.
 
 Furthermore, as of now, there are no ARM-architecture cloud services
-that the heavier Buildbot jobs may be offloaded to.  AWS
-[nixed][aws-nixes-arm] their ARM cloud plans, and other offerings like
-[the Online Labs ARM cloud][online-labs-arm-cloud] are not yet
+that the heavier Buildbot jobs may be offloaded to.  [AWS
+nixed] their ARM cloud plans, and other offerings like
+the [Online Labs ARM cloud] are not yet
 available.
 
-[mk]: http://machinekit.io
-[dt-buildbot]: http://buildbot.dovetail-automata.com
-[aws-nixes-arm]: http://www.businesscloudnews.com/2014/11/18/aws-opts-for-custom-intel-over-arm-silicon/
-[online-labs-arm-cloud]: http://techcrunch.com/2014/11/13/online-labs-designed-its-own-arm-servers-to-take-on-aws-digitalocean/
+[Machinekit]: http://machinekit.io
+[Dovetail Automata Buildbot]: http://buildbot.dovetail-automata.com
+[AWS nixed]: http://www.businesscloudnews.com/2014/11/18/aws-opts-for-custom-intel-over-arm-silicon/
+[Online Labs ARM cloud]: http://techcrunch.com/2014/11/13/online-labs-designed-its-own-arm-servers-to-take-on-aws-digitalocean/
 
 
 ## The solution:  cross compiling
@@ -50,8 +50,6 @@ proven][gh-z-mk-docker] with Docker.
 Also, cross building opens up possibilities for porting Machinekit to
 build for embedded systems where native compilation isn't an option
 because of hardware limitations.
-
-[gh-cdsteinkuehler]: https://github.com/cdsteinkuehler
 
 
 ## Cross build environment
@@ -115,12 +113,16 @@ package installed, check out the branch and run the following:
 
 ### Packages
 - `Multi-Arch`
+  - https://wiki.debian.org/Multiarch/CrossDependencies
+  - https://wiki.debian.org/Multiarch/HOWTO
 - `architecture.mk`
 - clean up build-deps
+  - run-time deps in build-deps
 - fix my packages
 
 ### Autoconf
 - `AC_TRY_RUN`
+  - http://czmq.zeromq.org/manual:zsys
 - Build arch vs. host arch
   - `AC_CANONICAL_*` actually not needed
   - `CC_FOR_BUILD`
@@ -137,6 +139,17 @@ package installed, check out the branch and run the following:
 ### Other
 
 - `PRELOAD_WORKAROUND` stuff breaks
+
+# Next
+
+http://www.vtk.org/Wiki/CMake_Cross_Compiling
+
+# Organize_me_please
+
+https://www.gnu.org/software/autoconf/manual/autoconf-2.69/html_node/Canonicalizing.html
+http://www.gnu.org/software/automake/manual/html_node/Cross_002dCompilation.html
+https://autotools.io/pkgconfig/pkg_check_modules.html
+
 
 
 [debian-77085]:
