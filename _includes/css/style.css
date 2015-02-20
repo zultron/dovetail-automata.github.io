@@ -361,17 +361,15 @@ pre, code {
   font-size: 14px;
   padding: 0 .5em;
   line-height: 1.8em;
+  background: #333;
+  color: FFF;
+  border-radius: 3px;
 }
 
 @media (min-width: 768px){
   pre, code {
     font-size: 16px;
   }
-}
-
-.highlight, p > pre, p > code, p > nobr > code, li > code, h5 > code, .note > code, a > code {
-  background: #BBB;
-  border-radius: 3px;
 }
 
 .note code {
