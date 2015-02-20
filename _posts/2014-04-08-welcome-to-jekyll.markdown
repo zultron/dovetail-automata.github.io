@@ -5,6 +5,14 @@ date:   2014-04-08 10:53:51
 categories: jekyll update
 ---
 
+http://jekyllrb.com/docs/configuration/
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+Machinekit runs on Jekyll
+http://www.machinekit.io/docs/home/
+
+
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
 To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
