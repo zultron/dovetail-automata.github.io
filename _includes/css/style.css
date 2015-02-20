@@ -377,7 +377,7 @@ pre, code {
 }
 
 .highlight, p > pre, p > code, p > nobr > code, li > code, h5 > code, .note > code, a > code {
-  background: #333;
+  background: #BBB;
   border-radius: 3px;
 }
 
