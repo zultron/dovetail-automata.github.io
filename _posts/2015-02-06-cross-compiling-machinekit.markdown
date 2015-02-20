@@ -5,7 +5,7 @@ date:   2015-02-06 16:20:00
 categories: machinekit build
 ---
 
-# The problem
+## The problem
 
 [Machinekit][mk], the open-source machine controller, is ported not
 only to x86 but also ARM architecture, and members of the community
@@ -37,7 +37,7 @@ available.
 [online-labs-arm-cloud]: http://techcrunch.com/2014/11/13/online-labs-designed-its-own-arm-servers-to-take-on-aws-digitalocean/
 
 
-# The solution:  cross compiling
+## The solution:  cross compiling
 
 An x86 cross ARM build solves these problems.
 
@@ -54,7 +54,7 @@ because of hardware limitations.
 [gh-cdsteinkuehler]: https://github.com/cdsteinkuehler
 
 
-# Cross build environment
+## Cross build environment
 
 Setting up a cross build environment is not always easy, but cross
 building Machinekit for ARM is much easier now thanks to progress in
@@ -104,7 +104,7 @@ package installed, check out the branch and run the following:
 [gh-mk-mk-iss479]: https://github.com/machinekit/machinekit/issues/479
 [gh-z-mk-docker]: https://github.com/zultron/machinekit/tree/docker
 
-# Issues
+## Issues
 
 - Standardizing to distro
   - `m4` macros
@@ -113,13 +113,13 @@ package installed, check out the branch and run the following:
     - hand-written stuff is too verbose
     - NIH stuff breaks
 
-## Packages
+### Packages
 - `Multi-Arch`
 - `architecture.mk`
 - clean up build-deps
 - fix my packages
 
-## Autoconf
+### Autoconf
 - `AC_TRY_RUN`
 - Build arch vs. host arch
   - `AC_CANONICAL_*` actually not needed
@@ -134,7 +134,7 @@ package installed, check out the branch and run the following:
     - Wheezy's `tcl` macros broken; [bug #777085][debian-77085]
 - CZMQ curve checks
 
-## Other
+### Other
 
 - `PRELOAD_WORKAROUND` stuff breaks
 
