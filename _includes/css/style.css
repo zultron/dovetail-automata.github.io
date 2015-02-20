@@ -87,6 +87,7 @@ nav ul {
 
 nav li {
   display: inline-block;
+  margin-top: 52px;
 }
 
 .nav_button a {
