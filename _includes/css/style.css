@@ -395,15 +395,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #666666;
-  text-decoration: none;
+  color: #99F;
   transition: all .25s;
    -moz-transition: all .25s;
    -webkit-transition: all .25s;
 }
 
 a:hover {
-  color: #999999;
+  color: #77F;
 }
 
 strong {
