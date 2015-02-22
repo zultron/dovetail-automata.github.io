@@ -170,13 +170,13 @@ nav li {
 .feature {
     padding: 0.5em 0.75em 0.5em 1em ;
     border-radius: 5px;
-    background: #cccccc; 
+    background: #444;
     height: 100%;
     margin: 0 0.5em;
 }
 
 .feature h2 {
-    color: #333333;
+    color: #DDD;
 }
 
 
