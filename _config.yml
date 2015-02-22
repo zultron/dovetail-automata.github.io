@@ -6,4 +6,4 @@ markdown: kramdown
 repository: https://github.com/zultron/dovetail-automata.github.io
 url: http://zultron.github.io/dovetail-automata.github.io
 google_analytics_id: 'put_your_google_analytics_id_here'
-baseurl:  ''
+baseurl:  dovetail-automata.github.io
