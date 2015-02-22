@@ -179,6 +179,12 @@ nav li {
     color: #DDD;
 }
 
+.feature img {
+    /* Center images in feature blocks */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* About page */
 #about_image {
