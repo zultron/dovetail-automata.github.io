@@ -2,14 +2,14 @@
   <aside>
     <ul>
       <li class="{% if page.title == 'Blog' %}current{% endif %}">
-        <a href="/blog.html">All Blog Posts</a>
+        <a href="{{site.baseurl}}/blog.html">All Blog Posts</a>
       </li>
     </ul>
     <h4>Recent Posts</h4>
     <ul>
       {% for post in site.posts limit:10 %}
       <li class="{% if page.title == post.title %}current{% endif %}">
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
       </li>
       {% endfor %}
     </ul>
