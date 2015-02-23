@@ -1,0 +1,12 @@
+Microsoft puts Windogs Server second after Linux
+
+http://blog.docker.com/2014/12/docker-announces-orchestration-for-multi-container-distributed-apps/
+
+    “We have strategically partnered with Docker because Microsoft is
+    investing in freedom of choice for developers. We believe that
+    Docker’s orchestration services APIs offer a flexible way to build,
+    deploy and manage highly available, distributed applications built for
+    Linux containers —and when available—Windows Server containers that
+    are freely portable between any host infrastructure. We are excited
+    about the Docker Machine Management API support for Azure as part of
+    the Alpha release.” – John Gossman, architect, Microsoft Azure

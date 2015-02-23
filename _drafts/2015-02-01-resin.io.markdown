@@ -1,0 +1,29 @@
+I'm a co-founder of the Machinekit project, an open-source machine controller.  The Beaglebone and RPi are our two targeted embedded platforms.
+
+Alejandros's talk [1] discusses the difficulties of setting up the infrastructure needed to scale up application deployment.  I know a lot about this from my past jobs, and in the Machinekit project, setting up a CI system to build packages for and perform unit tests on all combos of Debian/Ubuntu/Red Hat distros, x86 32+64 bit and ARM arches, and four real-time threads systems, and the whole stack for delivering rolling package updates, wow!
+
+[1] https://www.youtube.com/watch?v=gp8wqTjk0Fc
+
+It's exciting to see resin.io addressing this problem, especially when it looks like it's really close to being a replacement for part of our CI system.
+
+I still have some reservations about using resin.io for our open-source project.  
+
+
+I agree.  It seems resin.io is best as it is intended:  managing your own devices.  The project can't be responsible for managing all the users' devices, and esp. in an open-source project, users (I, anyway) might be uncomfortable with the lack of visibility into what's being pushed onto their devices, and when.
+
+
+
+kinsamanka's qemu-chroot
+https://registry.hub.docker.com/u/kinsamanka/docker-qemu-chroot/tags/manage/
+https://github.com/kinsamanka/docker-qemu-chroot
+
+
+
+Building Xenomai kernels for Yocto
+http://wiki.gumstix.org//index.php?title=Xenomai_-_Mini_Howto
+https://mail.gna.org/public/xenomai-help/2010-02/msg00186.html
+http://www.xenomai.org/pipermail/xenomai/2012-October/026533.html
+
+Also see [cloud build options]
+
+[cloud build options]: 2015-02-08-cloud-build-options.markdown

@@ -1,0 +1,7 @@
+I landed a contract with a company developing an unusual open-source (design docs still in stealth mode) CNC machine tool.  The owners claim to be descendants of a line of Portuguese 'cirurgião' surgeons, traceable back to the 16th C., and manufacture trephines (spinning saw blade), whose design documents' git history would have commits also about that old.
+
+The machine tool is a 3-axis doohickey mounted on a solid base with a seat and, um, 'work-holding' fixtures.  It will need a new kinematics module, since the x/y axes are rotary axes, with a downward-oriented, low-geared spindle w/quill on an inexpensive but solid arm-like apparatus.  They'll also cleverly use the low-geared spindle with an encoder to orient a scalpel while making incisions and a crazy, tiny stapler (not their tech) that makes perfect little stainless sutures that can be picked out with tweezers.
+
+The business model takes advantage of these new 'convenient medical care' clinics springing up all over America.  The idea is to put one these small, inexpensive machines into each one, where patients may elect the procedure much like they would a flu shot.  Somehow I missed this, but apparently trepanation is the next hottest thing among hipsters, not just for the old folks anymore, and this company plans to disrupt the market by being cheap and convenient.
+
+Anyway, they're under pressure with a hard deadline exactly 9 weeks from today,
