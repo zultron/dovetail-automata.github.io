@@ -1,14 +1,9 @@
 ---
 # Set up basic colors:  Light grays on dark grays
 #
-# Default colors
 default_font_color: "#ddd"
 default_background_color: "#333"
 default_article_color: "#444"
-# Nav button current background
-nav_button_background: "#000"
-# Date color
-meta_date_color: "#aaa"
 #
 #
 # Set up accent colors:  John Deere yellow (#FF0) and green (#383)
@@ -17,12 +12,19 @@ meta_date_color: "#aaa"
 link_color:  "#ff0"
 link_color_hover:  "#cc0"
 #
+# Nav button current
+nav_button_current_color: "#ff0"
+nav_button_current_background: "#383"
+#
 # Post list sidebar items
 sidebar_item_color:  "#383"
 #
 # Post category element
 category_gradient_light:  "#338833"
 category_gradient_dark:  "#245f24"
+#
+# Post date element
+meta_date_color: "#aaa"
 ---
 
 /* Base */
@@ -123,8 +125,8 @@ nav li {
 }
 
 .main-nav li.current a {
-  background: {{page.nav_button_background}};
-  color: white;
+  background: {{page.nav_button_current_background}};
+  color: {{page.nav_button_current_color}};
   box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 1px 5px rgba(0,0,0,.5);
 }
 
