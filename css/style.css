@@ -255,6 +255,9 @@ aside ul:first-child {
 
 aside li {
   list-style-type: none;
+  padding-left: 1em;
+  text-indent:-1em;
+
 }
 
 aside li a {
