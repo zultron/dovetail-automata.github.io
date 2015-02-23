@@ -4,10 +4,8 @@
       {{ post.title }}
     </a>
   </h2>
-  <span class="post-category">
-    <span class="label">
-      {{ post.categories | array_to_sentence_string }}
-    </span>
+  <span class="post-category label">
+    {{ post.categories | array_to_sentence_string }}
   </span>
   <div class="post-meta">
     <span class="post-date">
