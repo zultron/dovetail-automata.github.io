@@ -6,7 +6,7 @@
       {% include blog_head.html %}
 
       <div class="entry">
-        {{ post.content | truncatewords:40}}
+	{{ post.excerpt }}
       </div>
       
       <a href="{{site.baseurl}}{{ post.url }}" class="read-more">
