@@ -5,6 +5,15 @@ Written in Jekyll and hosted on GitHub pages
 
 # Development
 
+## Running in docker
+
+    docker run -t -i --detach=false -v "$PWD:/src" -p 8080:4000 \
+	    -u 1000 --name jekyll \
+		grahamc/jekyll serve --watch --baseurl='' --skip-initial-build -V &
+
+Then browse to http://localhost:8080/
+
+
 ## Installing the Alegreya-Sans-SC font locally
 
 To edit the svg logos with text in Inkscape, the [fonts] need to be

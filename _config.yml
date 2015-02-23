@@ -1,19 +1,29 @@
-name: Machinekit
-highlighter: pygments
-relative_permalinks: false
+# Outputting
 permalink: blog/:year/:month/:day/:title/
+
+# Conversion
 markdown: kramdown
-repository: https://github.com/zultron/dovetail-automata.github.io
-url: http://zultron.github.io/dovetail-automata.github.io
-google_analytics_id: 'put_your_google_analytics_id_here'
+highlighter: pygments
+excerpt_separator: "\n\n\n"
 
 # Serving
 baseurl:  /dovetail-automata.github.io
-detach:  true
+host: 0.0.0.0  # attach to all IP addresses
+port: 8080  # 4000 used by NFS!
 
+# Variable defaults
 defaults:
   -
     scope:
       path: ""
     values:
       author:  "zultron"
+
+# Custom vars
+#
+# Used in analytics.html
+url: http://zultron.github.io/dovetail-automata.github.io
+google_analytics_id: 'put_your_google_analytics_id_here'
+# Used in head.html
+repository: https://github.com/zultron/dovetail-automata.github.io
+# 
