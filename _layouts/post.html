@@ -1,18 +1,18 @@
 ---
-layout: news
+layout: default
 ---
-<article>
-  <h1>
-    {{ page.title }}
-    <a href="{{ page.url }}" class="permalink" title="Permalink">∞</a>
-  </h1>
-  <div class="post-meta">
-    <span class="post-date">
-      {{ page.date | date_to_string }}
-    </span>
-  </div>
+<section class="news grid">
 
-  <div class="post-content">
-    {{ content }}
-  </div>
-</article>
+    {% include news_contents_mobile.html %}
+
+    <article class="unit four-fifths">
+
+      {% include article_head.html %}
+
+      {% include article_body.html %}
+
+    </article>
+
+    {% include news_contents.html %}
+
+</section>
