@@ -1,13 +1,10 @@
 {% unless post %}
   {% assign post = page %}
-  {% assign my_url = "" %}
-{% else %}
-  {% capture my_url %}{{site.baseurl}}{{post.url}}{% endcapture %}
 {% endunless %}
 
 <h1 class="article-title">
   {{ post.title }}
-  <a class="anchor" href="{{my_url}}" aria-hidden="true">
+  <a class="anchor" href="{{site.baseurl}}/{{post.url}}" aria-hidden="true">
     <span class="octicon octicon-link"/>
   </a>
 </h1>
