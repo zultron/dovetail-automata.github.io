@@ -15,7 +15,6 @@
 /* Set up some rules to govern the grid */
 .grid {
   display: block;
-  clear: both;
 }
 .grid .unit {
   float: left;
