@@ -184,10 +184,6 @@ nav li {
     margin: 0 0.5em;
 }
 
-.feature h2 {
-    color: #DDD;
-}
-
 .feature img {
     /* Center images in feature blocks */
     display: block;
@@ -383,7 +379,7 @@ pre, code {
   padding: 0 .5em;
   line-height: 1.8em;
   background: #333;
-  color: FFF;
+  color: #FFF;
   border-radius: 3px;
 }
 
@@ -447,6 +443,29 @@ p {
 .align-left { text-align: left; }
 .align-center { text-align: center; }
 
+/* permalink
+ *
+ * use octicon link symbol; only visible when hovering over header
+ */
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link{
+	display:none;
+	vertical-align:middle
+}
+
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link{
+	display:inline-block
+}
+
 /* Article HTML */
 
 article h2,
@@ -455,15 +474,6 @@ article h4,
 article h5,
 article h6 {
   margin: 1em 0;
-}
-
-article h4 {
-  color: #fff;
-}
-
-h5, h6 {
-  font-size: 1em;
-  font-style: italic;
 }
 
 article ul li p {
