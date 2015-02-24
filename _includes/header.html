@@ -30,20 +30,24 @@
   </nav>
 
   <!-- Nav on mobile is a drop-down menu -->
-  <div class="grid show-on-mobiles">
-    <div class="unit whole">
-      <div class="main-nav-mobile">
-	<select onchange="if (this.value) window.location.href=this.value">
-	  <option value="{{site.baseurl}}/">Home</option>
-	  <option value="{{site.baseurl}}/about.html">About</option>
-	  <option value="{{site.baseurl}}/blog.html">Blog</option>
-	  <optgroup label="Recent Posts">
-	    {% for post in site.posts limit:10 %}
-	    <option value="{{site.baseurl}}{{ post.url }}">{{ post.title }}</option>
-	    {% endfor %}
-	  </optgroup>
-	</select>
-      </div>
-    </div>
+  <div class="main-nav-mobile show-on-mobiles unit whole">
+    <select onchange="if (this.value) window.location.href=this.value"
+	    name="Navigation">
+      {% assign hpages = site.html_pages | sort:"order"  %}
+      {% for hpage in hpages %}
+      <option value="{{site.baseurl}}{{hpage.url}}"
+	      {% if page.title == hpage.title %}selected="selected"{% endif %}
+	      >
+	{{hpage.title}}
+      </option>
+      {% endfor %}
+      {% for post in site.posts limit:10 %}
+      <option value="{{site.baseurl}}{{ post.url }}"
+	      {% if page.title == post.title %}selected="selected"{% endif %}
+	      >
+	&bull; {{ post.title }}
+      </option>
+      {% endfor %}
+    </select>
   </div>
 </header>
