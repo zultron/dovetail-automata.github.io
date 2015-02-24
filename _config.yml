@@ -21,6 +21,8 @@ defaults:
 
 # Custom vars
 #
+# Used in title
+name: Dovetail Automata
 # Used in analytics.html
 url: http://zultron.github.io/dovetail-automata.github.io
 google_analytics_id: 'put_your_google_analytics_id_here'
