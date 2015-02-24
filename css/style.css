@@ -61,7 +61,7 @@ body {
 /* Sections */
 
 
-body > header, body > section, body > footer {
+body > section, body > footer {
   float: left;
   width: 100%;
   clear: both;
