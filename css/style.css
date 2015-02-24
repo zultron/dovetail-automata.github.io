@@ -531,7 +531,7 @@ h3 .octicon-link,
 h4 .octicon-link,
 h5 .octicon-link,
 h6 .octicon-link{
-    display: none;
+    visibility: hidden;
     vertical-align: middle;
 }
 
@@ -542,7 +542,7 @@ h4:hover .octicon-link,
 h5:hover .octicon-link,
 h6:hover .octicon-link{
     /* display when hovering */
-    display: inline-block;
+    visibility: visible;
 }
 
 strong {
