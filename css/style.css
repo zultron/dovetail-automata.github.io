@@ -72,10 +72,6 @@ body > header {
 
 
 /* Header */
-#logo {
-   margin-top: 1em;
-   height: 10em;
-}
 
 #maintitle {
     margin-top: 0.5em;
@@ -120,8 +116,12 @@ nav li {
 .nav_button a {
   font-weight: 900;
   font-size: 18px;
-  padding: 0.5em 2em;
+  padding: 0.5em 1em;
   border-radius: 5px;
+}
+
+.main-nav ul {
+  float: right;
 }
 
 .main-nav li.current a {
