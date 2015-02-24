@@ -299,7 +299,7 @@ nav a {
 article {
   border-radius: 10px;
   padding: 20px;
-  margin: 0 10px;
+  margin: 0 10px 10px 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,.1);
   font-size: 16px;
   background-color: {{page.default_article_color}};
@@ -315,7 +315,7 @@ article {
 
 @media (max-width: 568px){
   article {
-    margin: 0;
+    margin: 0 0 10px 0;
   }
   article ul {
     padding-left: 20px;
