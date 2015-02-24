@@ -20,7 +20,7 @@ architectures.  Needless to say, this system is complex, and even with
 minutes to build and test each RT thread system on each CPU
 architecture.
 
----more---
+<!---more--->
 
 The ARM builds take over twenty minutes to build packages natively on
 a four core armv7hl Wandboard with 2GB RAM, compared with six minutes
