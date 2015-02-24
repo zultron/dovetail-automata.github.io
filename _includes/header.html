@@ -3,16 +3,17 @@
   <logo class="nav_logo half unit center-on-mobiles">
     <img src="{{site.baseurl}}/images/da_logo_blk.svg">
   </logo>
-  <!-- Nav bar in right half -->
+
+  <!-- Nav bar in right half for non-mobiles -->
   <nav class="main-nav unit half hide-on-mobiles">
     <ul>
-      <li class="{% if page.overview %}current{% endif %} nav_button">
+      <li class="{% if page.overview %}current{% endif %}">
 	<a href="{{site.baseurl}}/">Home</a>
       </li>
-      <li class="{% if page.about %}current{% endif %} nav_button">
+      <li class="{% if page.about %}current{% endif %}">
 	<a href="{{site.baseurl}}/about.html">About</a>
       </li>
-      <li class="{% if page.blog %}current{% endif %} nav_button">
+      <li class="{% if page.blog %}current{% endif %}">
 	<a href="{{site.baseurl}}/blog.html">Blog</a>
       </li>
       <!-- <li class="social_buttons hide-on-mobiles">  -->
@@ -27,5 +28,22 @@
       <!-- </li> -->
     </ul>
   </nav>
-</header>
 
+  <!-- Nav on mobile is a drop-down menu -->
+  <div class="grid show-on-mobiles">
+    <div class="unit whole">
+      <div class="main-nav-mobile">
+	<select onchange="if (this.value) window.location.href=this.value">
+	  <option value="{{site.baseurl}}/">Home</option>
+	  <option value="{{site.baseurl}}/about.html">About</option>
+	  <option value="{{site.baseurl}}/blog.html">Blog</option>
+	  <optgroup label="Recent Posts">
+	    {% for post in site.posts limit:10 %}
+	    <option value="{{site.baseurl}}{{ post.url }}">{{ post.title }}</option>
+	    {% endfor %}
+	  </optgroup>
+	</select>
+      </div>
+    </div>
+  </div>
+</header>

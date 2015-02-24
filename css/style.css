@@ -127,7 +127,7 @@ nav li {
   margin-top: 52px;
 }
 
-.nav_button a {
+nav a {
   font-weight: 900;
   font-size: 18px;
   padding: 0.5em 1em;
@@ -194,6 +194,39 @@ nav li {
     font-size: 24pt;
   }
 }
+
+.main-nav-mobile select{
+  background: {{page.category_gradient_light}};
+  background: -moz-linear-gradient(
+      top,
+      {{page.category_gradient_light}} 0%,
+      {{page.category_gradient_dark}} 100%);
+  background: -webkit-gradient(
+      linear, left top, left bottom,
+      color-stop(0%,{{page.category_gradient_light}}),
+      color-stop(100%,{{page.category_gradient_dark}}));
+  background: -webkit-linear-gradient(
+      top,
+      {{page.category_gradient_light}} 0%,
+      {{page.category_gradient_dark}} 100%);
+  background: -o-linear-gradient(
+      top,
+      {{page.category_gradient_light}} 0%,
+      {{page.category_gradient_dark}} 100%);
+  background: -ms-linear-gradient(
+      top,
+      {{page.category_gradient_light}} 0%,
+      {{page.category_gradient_dark}} 100%);
+  background: linear-gradient(
+      to bottom,
+      {{page.category_gradient_light}} 0%,
+      {{page.category_gradient_dark}} 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='{{page.category_gradient_light}}',
+      endColorstr='{{page.category_gradient_dark}}',
+      GradientType=0 );
+}
+
 
 
 /* Social media buttons */
