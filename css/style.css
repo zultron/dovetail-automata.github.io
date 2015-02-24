@@ -25,6 +25,14 @@ category_gradient_dark:  "#245f24"
 #
 # Post date element
 meta_date_color: "#aaa"
+#
+#
+# Formatting
+#
+# Large screen width
+screen_width_large: 768px
+# Mobile screen width
+screen_width_mobile: 629px
 ---
 
 /* Base */
@@ -44,6 +52,16 @@ body {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 3px 30px rgba(0,0,0,.3);
 }
+
+@media (max-width: {{page.screen_width_large}}) {
+  /* reduce text size on smaller screens */
+  body {
+      font-size: 16px;
+  }
+}
+
+
+
 .clear {
   display: block;
 }
@@ -158,7 +176,7 @@ nav li {
   box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 1px 5px rgba(0,0,0,.5);
 }
 
-@media (max-width: 629px){
+@media (max-width: {{page.screen_width_mobile}}){
   .main-nav li {
       display: block;
       text-align: center;
@@ -181,12 +199,6 @@ nav li {
   }
 }
 
-@media (max-width: 880px){
-   #logo {
-       display: none;
-   }
-}
-
 
 /* Social media buttons */
 .share_button {
@@ -201,7 +213,7 @@ nav li {
     padding-right: 0.5em;
 }
 
-@media (max-width: 629px){
+@media (max-width: {{page.screen_width_mobile}}){
   #social_buttons {
       display: none;
   }
@@ -214,12 +226,15 @@ nav li {
  * Front page, after header, a line of text
  */
 .intro {
-    font-size: 50px;
+    font-size: 35px;
+    text-align: center;
 }
 
-@media (min-width: 629px){
-  .intro p {
-    font-size: 2.5em;
+@media (max-width: {{page.screen_width_large}}){
+  /* reduce intro text size to avoid wrapping and to fit in small
+     screens */
+  .intro {
+    font-size: 30px;
   }
 }
 
@@ -261,8 +276,12 @@ article {
   background-color: {{page.default_article_color}};
 }
 
-
-@media (max-width: 480px){
+@media (min-width: {{page.screen_width_large}}){
+  /* Above {{page.screen_width_large}}, increase font size and padding */
+  article {
+    padding: 40px 40px 30px;
+    font-size: 21px;
+  }
 }
 
 @media (max-width: 568px){
@@ -271,13 +290,6 @@ article {
   }
   article ul {
     padding-left: 20px;
-  }
-}
-
-@media (min-width: 768px){
-  article {
-    padding: 40px 40px 30px;
-    font-size: 21px;
   }
 }
 
@@ -381,7 +393,7 @@ article h2:first-child {
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: {{page.screen_width_large}}){
   .post-category {
     margin-left: -50px;
   }
@@ -473,7 +485,7 @@ pre, code {
   border-radius: 3px;
 }
 
-@media (min-width: 768px){
+@media (min-width: {{page.screen_width_large}}){
   pre, code {
     font-size: 16px;
   }
@@ -694,7 +706,7 @@ code.option, code.flag, code.filter, code.output {
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: {{page.screen_width_large}}){
   .note {
     margin-left: -50px;
   }
@@ -820,7 +832,7 @@ code.option, code.flag, code.filter, code.output {
 
 /* Responsive tables */
 
-@media (max-width: 768px){
+@media (max-width: {{page.screen_width_large}}){
   .mobile-side-scroller {
     overflow-x: scroll;
     margin: 0 -40px;
