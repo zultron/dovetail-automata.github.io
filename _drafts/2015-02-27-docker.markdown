@@ -1,5 +1,15 @@
 [ Letter to Kent, 02-27 ]
 
+I've also been using Docker to develop my website, hosted on GitHub
+with Jekyll.  Even Trusty, newer than Wheezy, has an older (and
+broken) version of Jekyll, and it's non-trivial to upgrade.  It turns
+out to be super simple to run Jekyll in Docker, and really sped up my
+development time.
+
+    https://registry.hub.docker.com/u/grahamc/jekyll/
+
+[ Letter to Kent, 02-27 ]
+
 I'm stalled out on the Docker project for now, and the same for
 Vagrant by extension.  Here's what we've found so far.
 
