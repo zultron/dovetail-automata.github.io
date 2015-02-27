@@ -1,0 +1,33 @@
+[ Letter to Kent, 02-27 ]
+
+I'm stalled out on the Docker project for now, and the same for
+Vagrant by extension.  Here's what we've found so far.
+
+Docker pros:
+- Build the OS image with build env and publish on Docker hub
+  - Noobs then simply e.g. 'docker run machinekit/mk-jessie-i386'
+- resin.io; see below
+- Might support hard-RT in containers; see below
+- Same container image runs on PC or cloud
+  - Docker clouds:  Docker, AWS, more?
+
+Docker cons:
+- (Almost) Only runs on x86_64 host
+- Not included in Wheezy
+
+One issue TBD with Docker is, can containerized MK use kernel RT
+facilities outside container?  If not, Docker isn't very interesting.
+If so, Docker has a big advantage over fully virtualized environments
+where the guest kernel has no control over latency.  (Gemi figured out
+how to run ARM binaries with `binfmt_misc`; it would be pretty funny
+to see the emulated MK binaries running hard-RT by calling native
+kernel functions!  Our tests show emulation is about 1/20th the speed
+of native for compiles.)
+
+One thing that led me to Docker was resin.io.  That looks like a great
+service for a company to manage many deployments on BB or RPi.  I
+hoped it would make sense for the MK project to distribute software
+for those platforms, but it's opaque to non-admins.  The usability of
+resin.io is contingent on the above question, since the host OS is
+Yocto (notably missing an RT kernel) and the app runs in a Docker
+container.
