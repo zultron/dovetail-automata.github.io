@@ -116,6 +116,17 @@ nav.nav_logo h2 {
     font-size: 16px;
 }
 
+header logo div {
+  border-radius: 15px;
+  background: {{page.default_article_color}};
+  padding: 5px;
+  display: inline-block;
+}
+
+header logo img {
+  display: block;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
