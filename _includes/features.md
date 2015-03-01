@@ -1,8 +1,8 @@
 
 # Statement
 
-We help hardware companies design and build control software, and make
-their application accessible to consumers anywhere.
+We help hardware companies design, build and deploy control software
+accessible by consumers anywhere, on any device.
 
 - Integrate open source software to solve your problem.
 - Access your app from anywhere
