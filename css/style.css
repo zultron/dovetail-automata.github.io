@@ -243,16 +243,8 @@ nav a {
  * Front page, after header, a line of text
  */
 .intro {
-    font-size: 35px;
     text-align: center;
-}
-
-@media (max-width: {{page.screen_width_large}}){
-  /* reduce intro text size to avoid wrapping and to fit in small
-     screens */
-  .intro {
-    font-size: 30px;
-  }
+    font-style: italic;
 }
 
 /* Features boxes */
