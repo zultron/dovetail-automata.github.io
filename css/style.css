@@ -106,7 +106,7 @@ body > header {
 
 header logo div {
   border-radius: 15px;
-  background: {{page.default_article_color}};
+  background: {{page.nav_button_current_background}};
   padding: 5px;
   display: inline-block;
 }
