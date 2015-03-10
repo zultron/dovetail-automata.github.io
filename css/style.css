@@ -258,7 +258,7 @@ aside ul:first-child {
   margin-top: 0;
 }
 
-/* blog title side-list */
+/* Article title side-list */
 aside li {
   /* remove list bullets */
   list-style-type: none;
@@ -274,7 +274,7 @@ aside li a {
   color: {{page.sidebar_item_color}};
 }
 
-/* Blog title side-list, current item */
+/* Article title side-list, current item */
 aside li.current a { color: {{page.link_color}}; }
 aside li.current a:hover { color: {{page.link_color_hover}}; }
 aside li.current a:before {
@@ -290,7 +290,7 @@ aside li.current a:before {
   left: -30px;
 }
 
-/* Blog posts */
+/* Article posts */
 
 article h2:first-child {
   margin-top: 0;
@@ -361,7 +361,7 @@ article h2:first-child {
 }
 
 
-/* Blog list */
+/* Article list */
 article .read-more {
   text-align: right;
   font-weight: 900;

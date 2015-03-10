@@ -1,5 +1,5 @@
 # Outputting
-permalink: blog/:year/:month/:day/:title/
+permalink: articles/:year/:month/:day/:title/
 
 # Conversion
 markdown: kramdown
