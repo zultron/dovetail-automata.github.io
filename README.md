@@ -7,7 +7,7 @@ Written in Jekyll and hosted on GitHub pages
 
 ## Running in docker
 
-    docker run -t -i --detach=false -v "$PWD:/src" -p 8080:4000 \
+    docker run -t -i --detach=false -v "$PWD:/src" -p 8080:8080 \
 	    -u 1000 --name jekyll \
 		grahamc/jekyll serve --watch --baseurl='' -V &
 
