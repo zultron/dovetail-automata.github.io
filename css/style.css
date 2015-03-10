@@ -23,6 +23,10 @@ sidebar_item_color:  "#383"
 category_gradient_light:  "#338833"
 category_gradient_dark:  "#245f24"
 #
+# Logo element
+logo_gradient_light:  "#338833"
+logo_gradient_dark:  "#338833"
+#
 # Post date element
 meta_date_color: "#aaa"
 #
@@ -85,7 +89,7 @@ header, section, footer {
 /* Header */
 
 header logo div {
-  {% include_relative style_box.css padding="5px" border-radius="5px" %}
+  {% include_relative style_box.css padding="5px" border-radius="5px" light=page.logo_gradient_light dark=page.logo_gradient_dark %}
   display: inline-block;
 }
 

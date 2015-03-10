@@ -1,6 +1,6 @@
 {% comment %}
 Include this with:
-  {% include_relative style_box.css %}
+  {% include_relative style_box.css param={{page.param}} %}
 {% endcomment %}
 {% if include.light %}
 {% assign light = include.light %}
