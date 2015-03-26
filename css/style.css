@@ -172,6 +172,11 @@ nav a {
   font-size: 42px;
 }
 
+.intro .intro-box {
+  margin: 0 0.5em;
+  {% include_relative style_box.css padding="0.5em 0.75em 0.5em 1em" %}
+}
+
 .intro ul {
   margin: 0;
 }
@@ -367,6 +372,36 @@ article .read-more {
   font-weight: 900;
   font-size: 18px;
 }
+
+/* Footer */
+
+footer .footer * {
+    /* Keep things on the same line by default */
+    float: left;
+    /* Leave space on right for things that float: left */
+    margin: 0px 1em 0px 0px;
+}
+
+footer .footer {
+  margin: 0 0.5em;
+  {% include_relative style_box.css padding="0.5em 0.75em 0.5em 1em" %}
+}
+
+footer .phone, footer .email {
+    /* Phone and email always on new line */
+    clear: left;
+}
+
+footer .footer:before, footer .footer:after {
+  /* Fix gradient box not surrounding float: left elements */
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
+
+
 
 /* Code Highlighting */
 
