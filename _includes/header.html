@@ -1,9 +1,9 @@
 <header class="grid">
   <!-- Dovetail Automata logo and name in left half -->
   <logo class="nav_logo half unit">
-    <a href="{{site.baseurl}}/">
+    <a href="/">
       <div>
-	<img src="{{site.baseurl}}/images/da_logo_blk.svg">
+	<img src="/images/da_logo_blk.svg">
       </div>
     </a>
   </logo>
@@ -12,13 +12,13 @@
   <nav class="main-nav unit half hide-on-mobiles">
     <ul>
       <li class="{% if page.overview %}current{% endif %}">
-	<a href="{{site.baseurl}}/">Home</a>
+	<a href="/">Home</a>
       </li>
       <li class="{% if page.about %}current{% endif %}">
-	<a href="{{site.baseurl}}/about.html">About</a>
+	<a href="/about.html">About</a>
       </li>
       <li class="{% if page.article %}current{% endif %}">
-	<a href="{{site.baseurl}}/articles.html">Articles</a>
+	<a href="/articles.html">Articles</a>
       </li>
       <!-- <li class="social_buttons hide-on-mobiles">  -->
       <!-- 	<a -->
@@ -26,7 +26,7 @@
       <!-- 	   alt="Like this page on Facebook"> -->
       <!-- 	  <img -->
       <!-- 	     class="share_button" -->
-      <!-- 	     src="{{site.baseurl}}/images/facebook-like-256.png" -->
+      <!-- 	     src="/images/facebook-like-256.png" -->
       <!-- 	     title="Like this page on Facebook"> -->
       <!-- 	</a> -->
       <!-- </li> -->
@@ -39,14 +39,14 @@
 	    name="Navigation">
       {% assign hpages = site.html_pages | sort:"order"  %}
       {% for hpage in hpages %}
-      <option value="{{site.baseurl}}{{hpage.url}}"
+      <option value="{{hpage.url}}"
 	      {% if page.title == hpage.title %}selected="selected"{% endif %}
 	      >
 	{{hpage.title}}
       </option>
       {% endfor %}
       {% for post in site.posts limit:10 %}
-      <option value="{{site.baseurl}}{{ post.url }}"
+      <option value="{{ post.url }}"
 	      {% if page.title == post.title %}selected="selected"{% endif %}
 	      >
 	&bull; {{ post.title }}

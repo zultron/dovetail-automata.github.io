@@ -7,7 +7,6 @@ highlighter: pygments
 excerpt_separator: "<!---more--->"
 
 # Serving
-baseurl:  /
 host: 0.0.0.0  # attach to all IP addresses
 port: 8080  # 4000 used by NFS!
 
