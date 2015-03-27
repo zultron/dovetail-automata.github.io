@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Welcome to Our New Site!"
+date:   2014-04-08 10:53:51
+categories: jekyll update
+---
+
+## Welcome!
+
+Dovetail Automata LLC is happy to have our new site online.
+
+The site is written with [Jekyll] and hosted on [GitHub Pages].
+[Rod Fitzsimmons Frey] helped out with the web design (and I've
+barbered his good work since), and [Alexander Rössler] created the
+site's logos. It's no mistake that all these characteristics are
+shared with the [Machinekit] project!
+
+[View the source] on GitHub.
+
+[Jekyll]: http://jekyllrb.com
+[GitHub Pages]: https://pages.github.com
+[Rod Fitzsimmons Frey]: https://github.com/guildeyewear
+[Alexander Rössler]: https://github.com/strahlex
+[Machinekit]: http://machinekit.io
+[View the source]: https://github.com/zultron/dovetail-automata.github.io
