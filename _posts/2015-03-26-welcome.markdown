@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Our New Site!"
 date:   2014-04-08 10:53:51
-categories: jekyll update
+categories: news
 ---
 
 Dovetail Automata LLC is happy to have our new site online.
